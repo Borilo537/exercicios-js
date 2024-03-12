@@ -1,0 +1,258 @@
+@font-face {
+    font-family: 'MILK';
+    src: url('LEMONMILK-Regular.otf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.esquerda {
+    transition: 0.3s;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: white;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 100px;
+    top: 40%;
+}
+
+.direita {
+    transition: 0.3s;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: white;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    right: 100px;
+    top: 40%;
+}
+
+.esquerda:hover {
+    transform: scale(1.2);
+}
+
+.direita:hover {
+    transform: scale(1.2);
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-text {
+    margin-top: 50px;
+    font-size: 60px;
+    color: white;
+    font-family: MILK;
+}
+
+.contador {
+    opacity: 0;
+    transition: 0.4s;
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    width: 600px;
+    height: 500px;
+    font-family: MILK;
+    border-radius: 10px;
+    margin-top: 15vh;
+    align-items: center;
+}
+
+.numero-contador {
+    font-family: MILK;
+    background-color: black;
+    border: none;
+    height: 100px;
+    width: 150px;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    margin-top: 100px;
+}
+
+.botao-contador {
+    transition: 0.3s;
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+    background-color: black;
+    border: none;
+    height: 100px;
+    width: 190px;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao-contador:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(158, 158, 158);
+}
+
+.teclas {
+    opacity: 0;
+    transition: 0.4s;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    width: 600px;
+    height: 500px;
+    font-family: MILK;
+    border-radius: 10px;
+    margin-top: 25vh;
+    align-items: center;
+}
+
+.tecla-input {
+    font-family: MILK;
+    background-color: black;
+    border: none;
+    height: 100px;
+    width: 350px;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    margin-top: 100px;
+}
+
+.botao {
+    opacity: 0;
+    transition: 0.4s;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    width: 600px;
+    height: 500px;
+    font-family: MILK;
+    border-radius: 10px;
+    margin-top: 25vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.botao-mensagem {
+    transition: 0.3s;
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+    background-color: black;
+    border: none;
+    height: 100px;
+    width: 190px;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao-mensagem:hover {
+    transform: scale(1.3);
+    color: rgb(0, 0, 0);
+    background-color: rgb(201, 201, 201);
+}
+
+.img {
+    opacity: 0;
+    transition: 0.4s;
+    user-select: none;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 20vh;
+}
+
+.img:hover {
+    transform: scale(1.1);
+}
+
+.form {
+    opacity: 0;
+    transition: 0.4s;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    width: 600px;
+    height: 500px;
+    font-family: MILK;
+    border-radius: 10px;
+    margin-top: 25vh;
+    align-items: center;
+}
+
+.form-input {
+    font-weight: 300;
+    background-color: black;
+    border: none;
+    height: 100px;
+    width: 450px;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    margin-top: 100px;
+}
+
+.form-input::placeholder {
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+}
+
+.botao-form {
+    transition: 0.3s;
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+    background-color: black;
+    border: none;
+    height: 100px;
+    width: 190px;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.olhos{
+    z-index: -1;
+    position: absolute;
+    top: 10vh;
+    left: 13vw;  
+    width: 25vw;
+    opacity: 0; 
+}
+
+.olhos2{
+    z-index: -1;
+    transform: scaleX(-1);
+    position: absolute;
+    top: 10vh;
+    left: 62vw;  
+    width: 25vw;
+    opacity: 0; 
+}
